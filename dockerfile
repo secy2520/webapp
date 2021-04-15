@@ -18,6 +18,9 @@ RUN apt-get install -y php-mbstring
 RUN apt-get install -y composer
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y apache2
+RUN apt-get install -y zip
+RUN apt-get install -y unzip
+RUN unzip 
 COPY ./bloofoxCMS_0.3.5 /var/www/html/bloofoxCMS
 COPY ./apache2.conf /etc/apache2/apache2.conf 
 RUN apt-get install -y  mysql-server
